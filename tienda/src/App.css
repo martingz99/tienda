@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+    /*background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);*/
+}
+
+/* #app{
+    background-color: #e00074;
+}*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Centra verticalmente el logo y el texto */
+}
+
+.logo img {
+    height: 40px; /* Ajusta la altura del logo según sea necesario */
+    margin-right: 10px;
+}
+
+.logo .naiki {
+    font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+
+}
+
+nav ul li a {
+    font-size: 20px;
+    padding: 10px 15px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 150px;
+    z-index: 1000;
+}
+
+.dropdown li {
+    border-bottom: 1px solid #555;
+}
+
+.dropdown li a {
+    padding: 10px 15px;
+    color: rgb(0, 0, 0);
+}
+
+.dropdown li a:hover {
+    background-color: #555;
+}
